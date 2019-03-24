@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg">
+
+    <include layout="@layout/include_navi" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="270dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_title"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/login_icon_account"
+                android:drawablePadding="25dip"
+                android:hint="@string/login_username_hint"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:textColorHint="#ffdddddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@mipmap/base_horization_line" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_title"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/login_icon_password"
+                android:drawablePadding="25dip"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="15dip"
+                android:textColorHint="#ffdddddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@mipmap/base_horization_line" />
+
+            <EditText
+                android:id="@+id/et_password_again"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_title"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/login_icon_password"
+                android:drawablePadding="25dip"
+                android:hint="@string/login_email_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="15dip"
+                android:textColorHint="#ffdddddd" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="302dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="208dp"
+            android:layout_marginBottom="475dp"
+            android:background="@drawable/btn_login_selector"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
